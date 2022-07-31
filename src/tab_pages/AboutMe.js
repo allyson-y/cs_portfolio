@@ -1,7 +1,11 @@
+import './AboutMe.css';
+
 function AboutMe() {
     return (
         <div>
-            Hello! My name is Allyson Yao, and this is my website! I am hoping this website can tell you a bit about me, some projects I have worked on, and some companies I have worked with.
+            I am a currently a junior at <span className={"purple"}> Harvey Mudd College </span> majoring in CS.
+            My goal is to use computer science to help other people.
+            To do this, I have worked at several companies to help me get a better sense of what I enjoy to do within computer science.
         </div>
     )
 }

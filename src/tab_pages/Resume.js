@@ -1,7 +1,9 @@
+import ResumePhoto from "../pictures/resume.png";
+
 function Resume() {
     return (
         <div>
-            Hello! My name is Allyson Yao, and this is my website! I am hoping this website can tell you a bit about me, some projects I have worked on, and some companies I have worked with.
+            <img src={ResumePhoto} alt="Resume" width={500}/>
         </div>
     )
 }

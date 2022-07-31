@@ -1,6 +1,6 @@
-.container {
+.home {
     padding-top: 10px;
     display: grid;
     gap: 25px 0px;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: 400px 400px;
 }
