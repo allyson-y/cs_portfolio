@@ -11,7 +11,10 @@
   padding-top: 10px;
   /*align-items: center;*/
   /*justify-content: center;*/
-  font-size: calc(10px + 2vmin);
-  color: dimgray;
+  font-family: OpenSans;
+  font-size: calc(10px + 4vmin);
 }
 
+.tabs {
+  font-weight: bold;
+}
