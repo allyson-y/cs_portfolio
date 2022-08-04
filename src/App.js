@@ -1,6 +1,6 @@
 import './App.css';
 import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
-import 'react-tabs/style/react-tabs.css';
+// import 'react-tabs/style/react-tabs.css';
 import Work from "./tab_pages/Work";
 import AboutMe from "./tab_pages/AboutMe";
 import Resume from "./tab_pages/Resume";

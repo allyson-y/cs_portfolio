@@ -36,8 +36,8 @@ function Work() {
     return <>
         {!showRoomEasy && !showToDoList  && !showPortfolio && !showFlashCards ?
         <div>
-            <div>
-                Experience
+            <div className={"title"}>
+                    Experience
             </div>
             <div className={"container"}>
                 <img src={PureStorage} alt={"PureStorage"} height={300}/>
@@ -45,7 +45,7 @@ function Work() {
                 <img src={BearHouse} alt={"BearHouse"} height={300}/>
                 <img src={Microsoft} alt={"Microsoft"} height={300}/>
             </div>
-            <div>
+            <div className={"title"}>
                 Projects
             </div>
             <div className={"container"}>
