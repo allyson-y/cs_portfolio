@@ -23,6 +23,10 @@ function Work() {
         setShowPure(!showPure);
     }
 
+    function toggleShowJuni() {
+        setShowJuni(!showJuni);
+    }
+
     function toggleShowRoomEasy() {
         setShowRoomEasy(!showRoomEasy);
     }
