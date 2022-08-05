@@ -10,10 +10,18 @@ import {useState} from "react";
 import './Work.css';
 
 function Work() {
+    const [showPure, setShowPure] = useState(false);
+    const [showJuni, setShowJuni] = useState(false);
+    const [showBearHouse, setShowBearHouse] = useState(false);
+    const [showMicrosoft, setShowMicrosoft] = useState(false);
     const [showRoomEasy, setShowRoomEasy] = useState(false);
     const [showToDoList, setShowToDoList] = useState(false);
     const [showPortfolio, setShowPortfolio] = useState(false);
     const [showFlashCards, setShowFlashCards] = useState(false);
+
+    function toggleShowPure() {
+        setShowPure(!showPure);
+    }
 
     function toggleShowRoomEasy() {
         setShowRoomEasy(!showRoomEasy);
