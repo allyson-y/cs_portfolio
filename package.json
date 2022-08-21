@@ -19,9 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "install gh-pages": "npm install gh-pages --save-dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b main -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "html-webpack-plugin": "^5.5.0"
+    "gh-pages": "^4.0.0"
   }
 }

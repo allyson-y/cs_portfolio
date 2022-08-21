@@ -27,6 +27,14 @@ function Work() {
         setShowJuni(!showJuni);
     }
 
+    function toggleShowBearHouse() {
+        setShowBearHouse(!showBearHouse);
+    }
+
+    function toggleShowMicrosoft() {
+        setShowMicrosoft(!showMicrosoft);
+    }
+
     function toggleShowRoomEasy() {
         setShowRoomEasy(!showRoomEasy);
     }
@@ -46,46 +54,71 @@ function Work() {
     //TODO: work on hover
 
     return <>
-        {!showRoomEasy && !showToDoList  && !showPortfolio && !showFlashCards ?
-        <div>
-            <div className={"title"}>
-                    Experience
-            </div>
-            <div className={"container"}>
-                <img src={PureStorage} alt={"PureStorage"} height={300}/>
-                <img src={JuniLearning} alt={"JuniLearning"} height={300}/>
-                <img src={BearHouse} alt={"BearHouse"} height={300}/>
-                <img src={Microsoft} alt={"Microsoft"} height={300}/>
-            </div>
-            <div className={"title"}>
-                Projects
-            </div>
-            <div className={"container"}>
-                <img onMouseOver={() => console.log("hover")} src={RoomEasy} alt="RoomEasy" height={300} onClick={toggleShowRoomEasy}/>
-                <img src={ToDoList} alt="ToDoList" height={300} onClick={toggleShowToDoList}/>
-                <img src={Portfolio} alt="Portfolio" height={300} onClick={toggleShowPortfolio}/>
-                <img src={FlashCardsApp} alt="FlashCardsApp" height={300} onClick={toggleShowFlashCards}/>
-            </div>
-        </div>
-        : <> {showRoomEasy ?
+        {!showPure && !showJuni && !showBearHouse && !showMicrosoft && !showRoomEasy && !showToDoList  && !showPortfolio && !showFlashCards ?
             <div>
-                <button onClick={toggleShowRoomEasy}>Back</button>
-                <h1>RoomEasy App</h1>
-            </div>
-            : <> {showToDoList ?
-                <div>
-                    <button onClick={toggleShowToDoList}>Back</button>
-                    <h1>To Do List Project</h1>
+                <div className={"title"}>
+                    Experience
                 </div>
-                : <> {showPortfolio ?
+                <div className={"container"}>
+                    <img src={PureStorage} alt={"PureStorage"} height={300} onClick={toggleShowPure}/>
+                    <img src={JuniLearning} alt={"JuniLearning"} height={300} onClick={toggleShowJuni}/>
+                    <img src={BearHouse} alt={"BearHouse"} height={300} onClick={toggleShowBearHouse}/>
+                    <img src={Microsoft} alt={"Microsoft"} height={300} onClick={toggleShowMicrosoft}/>
+                </div>
+                <div className={"title"}>
+                    Projects
+                </div>
+                <div className={"container"}>
+                    <img onMouseOver={() => console.log("hover")} src={RoomEasy} alt="RoomEasy" height={300} onClick={toggleShowRoomEasy}/>
+                    <img src={ToDoList} alt="ToDoList" height={300} onClick={toggleShowToDoList}/>
+                    <img src={Portfolio} alt="Portfolio" height={300} onClick={toggleShowPortfolio}/>
+                    <img src={FlashCardsApp} alt="FlashCardsApp" height={300} onClick={toggleShowFlashCards}/>
+                </div>
+            </div>
+            : <> {showPure ?
+                <div>
+                    <button onClick={toggleShowPure}>Back</button>
+                    <h1>Pure Storage</h1>
+                </div>
+                : <> {showJuni ?
                     <div>
-                        <button onClick={toggleShowPortfolio}>Back</button>
-                        <h1>Portfolio</h1>
+                        <button onClick={toggleShowJuni}>Back</button>
+                        <h1>Juni Learning</h1>
                     </div>
-                    : <div>
-                            <button onClick={toggleShowFlashCards}>Back</button>
-                            <h1>Flashcards App</h1>
-                    </div>}
+                    : <> {showBearHouse ?
+                        <div>
+                            <button onClick={toggleShowBearHouse}>Back</button>
+                            <h1>BearHouse</h1>
+                        </div>
+                        : <> {showMicrosoft ?
+                            <div>
+                                <button onClick={toggleShowMicrosoft}>Back</button>
+                                <h1>Microsoft</h1>
+                            </div>
+                            : <> {showRoomEasy ?
+                                <div>
+                                    <button onClick={toggleShowRoomEasy}>Back</button>
+                                    <h1>RoomEasy App</h1>
+                                </div>
+                                : <> {showToDoList ?
+                                    <div>
+                                        <button onClick={toggleShowToDoList}>Back</button>
+                                        <h1>To Do List Project</h1>
+                                    </div>
+                                    : <> {showPortfolio ?
+                                        <div>
+                                            <button onClick={toggleShowPortfolio}>Back</button>
+                                            <h1>Portfolio</h1>
+                                        </div>
+                                        : <div>
+                                            <button onClick={toggleShowFlashCards}>Back</button>
+                                            <h1>Flashcards App</h1>
+                                        </div>
+                                    }
+                                </>}
+                            </>}
+                        </>}
+                    </>}
                 </>}
             </>}
         </>}

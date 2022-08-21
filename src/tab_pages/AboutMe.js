@@ -4,7 +4,7 @@ import "./AboutMe.css";
 function AboutMe() {
     return (
         <div className="home">
-            <div className={"img"}>
+            <div>
                 <img src={Headshot} alt="Headshot" height={500}/>
             </div>
             <div className={"text"}>
