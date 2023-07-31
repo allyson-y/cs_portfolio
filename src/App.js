@@ -7,6 +7,8 @@ import Resume from "./tab_pages/Resume";
 import './fonts/OpenSans-Medium.ttf';
 import {useState} from "react";
 
+// https://www.cs.hmc.edu/~rhodes/courses/cs124/sp22/syllabus.html
+
 function App() {
     const [tabIndex, setTabIndex] = useState(0);
 

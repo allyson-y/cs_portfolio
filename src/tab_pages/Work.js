@@ -6,10 +6,12 @@ import RoomEasy from '../pictures/RoomEasy.png';
 import ToDoList from '../pictures/ToDoList.png';
 import Portfolio from '../pictures/PortfolioLogo.png';
 import FlashCardsApp from '../pictures/FlashCardsAppLogo.png';
+import WBD from '../pictures/wbd.png';
 import {useState} from "react";
 import './Work.css';
 
 function Work() {
+    const [showWBD, setShowWBD] = useState(false);
     const [showPure, setShowPure] = useState(false);
     const [showJuni, setShowJuni] = useState(false);
     const [showBearHouse, setShowBearHouse] = useState(false);
@@ -18,6 +20,10 @@ function Work() {
     const [showToDoList, setShowToDoList] = useState(false);
     const [showPortfolio, setShowPortfolio] = useState(false);
     const [showFlashCards, setShowFlashCards] = useState(false);
+
+    function toggleShowWBD() {
+        setShowWBD(!showWBD);
+    }
 
     function toggleShowPure() {
         setShowPure(!showPure);
@@ -54,12 +60,13 @@ function Work() {
     //TODO: work on hover
 
     return <>
-        {!showPure && !showJuni && !showBearHouse && !showMicrosoft && !showRoomEasy && !showToDoList  && !showPortfolio && !showFlashCards ?
+        {!showWBD && !showPure && !showJuni && !showBearHouse && !showMicrosoft && !showRoomEasy && !showToDoList  && !showPortfolio && !showFlashCards ?
             <div>
                 <div className={"title"}>
                     Experience
                 </div>
                 <div className={"container"}>
+                    <img src={WBD} alt={"WBD"} height={300} onClick={toggleShowWBD}/>
                     <img src={PureStorage} alt={"PureStorage"} height={300} onClick={toggleShowPure}/>
                     <img src={JuniLearning} alt={"JuniLearning"} height={300} onClick={toggleShowJuni}/>
                     <img src={BearHouse} alt={"BearHouse"} height={300} onClick={toggleShowBearHouse}/>
@@ -75,53 +82,60 @@ function Work() {
                     <img src={FlashCardsApp} alt="FlashCardsApp" height={300} onClick={toggleShowFlashCards}/>
                 </div>
             </div>
-            : <> {showPure ?
+            : <> {showWBD ?
                 <div>
-                    <button onClick={toggleShowPure}>Back</button>
-                    <h1>Pure Storage</h1>
+                    <button onClick={toggleShowWBD}>Back</button>
+                    <h1>Warner Bros Discovery</h1>
                 </div>
-                : <> {showJuni ?
+                : <> {showPure ?
                     <div>
-                        <button onClick={toggleShowJuni}>Back</button>
-                        <h1>Juni Learning</h1>
+                        <button onClick={toggleShowPure}>Back</button>
+                        <h1>Pure Storage</h1>
                     </div>
-                    : <> {showBearHouse ?
+                    : <> {showJuni ?
                         <div>
-                            <button onClick={toggleShowBearHouse}>Back</button>
-                            <h1>BearHouse</h1>
+                            <button onClick={toggleShowJuni}>Back</button>
+                            <h1>Juni Learning</h1>
                         </div>
-                        : <> {showMicrosoft ?
+                        : <> {showBearHouse ?
                             <div>
-                                <button onClick={toggleShowMicrosoft}>Back</button>
-                                <h1>Microsoft</h1>
+                                <button onClick={toggleShowBearHouse}>Back</button>
+                                <h1>BearHouse</h1>
                             </div>
-                            : <> {showRoomEasy ?
+                            : <> {showMicrosoft ?
                                 <div>
-                                    <button onClick={toggleShowRoomEasy}>Back</button>
-                                    <h1>RoomEasy App</h1>
+                                    <button onClick={toggleShowMicrosoft}>Back</button>
+                                    <h1>Microsoft</h1>
                                 </div>
-                                : <> {showToDoList ?
+                                : <> {showRoomEasy ?
                                     <div>
-                                        <button onClick={toggleShowToDoList}>Back</button>
-                                        <h1>To Do List Project</h1>
+                                        <button onClick={toggleShowRoomEasy}>Back</button>
+                                        <h1>RoomEasy App</h1>
                                     </div>
-                                    : <> {showPortfolio ?
+                                    : <> {showToDoList ?
                                         <div>
-                                            <button onClick={toggleShowPortfolio}>Back</button>
-                                            <h1>Portfolio</h1>
+                                            <button onClick={toggleShowToDoList}>Back</button>
+                                            <h1>To Do List Project</h1>
                                         </div>
-                                        : <div>
-                                            <button onClick={toggleShowFlashCards}>Back</button>
-                                            <h1>Flashcards App</h1>
-                                        </div>
-                                    }
+                                        : <> {showPortfolio ?
+                                            <div>
+                                                <button onClick={toggleShowPortfolio}>Back</button>
+                                                <h1>Portfolio</h1>
+                                            </div>
+                                            : <div>
+                                                <button onClick={toggleShowFlashCards}>Back</button>
+                                                <h1>Flashcards App</h1>
+                                            </div>
+                                        }
+                                        </>}
+                                    </>}
                                 </>}
                             </>}
                         </>}
                     </>}
                 </>}
-            </>}
-        </>}
+            </>
+        }
     </>
 }
 

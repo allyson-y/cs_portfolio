@@ -1,4 +1,4 @@
-import ResumePhoto from "../pictures/resume.png";
+import ResumePhoto from "../pictures/Resume.png";
 
 function Resume() {
     return (

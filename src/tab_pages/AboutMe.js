@@ -8,7 +8,7 @@ function AboutMe() {
                 <img src={Headshot} alt="Headshot" height={500}/>
             </div>
             <div className={"text"}>
-                Hello! My name is Allyson Yao, and I am currently a junior at <span className={"purple"}> Harvey Mudd College </span> majoring in CS. I am also on the CMS Varsity Swim Team (Go Athenas!) and a Mentorship Coordinator in the Society of Women Engineers Club at Mudd.
+                Hello! My name is Allyson Yao, and I am currently a senior at <span className={"purple"}> Harvey Mudd College </span> majoring in CS. I am also a captain on the CMS Varsity Swim Team (Go Athenas!) and a Mentorship Coordinator in the Society of Women Engineers Club at Mudd.
             </div>
         </div>
     )

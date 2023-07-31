@@ -19,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "install gh-pages": "npm install gh-pages --save-dev",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build"
   },
