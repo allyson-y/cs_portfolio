@@ -21,7 +21,7 @@
     "eject": "react-scripts eject",
     "install gh-pages": "npm install gh-pages --save-dev",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
