@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cs_portfolio/static/css/main.3177ff9b.css",
+    "main.js": "/cs_portfolio/static/js/main.eedfc7db.js",
+    "static/js/787.81552d00.chunk.js": "/cs_portfolio/static/js/787.81552d00.chunk.js",
+    "static/media/portfolio_headshot.png": "/cs_portfolio/static/media/portfolio_headshot.4b3675421506e489bb1e.png",
+    "static/media/Resume.png": "/cs_portfolio/static/media/Resume.b1ef569424eb3629a0b2.png",
+    "static/media/PortfolioLogo.png": "/cs_portfolio/static/media/PortfolioLogo.e453d50d0d1b59d013a2.png",
+    "static/media/wbd.png": "/cs_portfolio/static/media/wbd.226ebc25b8e7a21d1b1d.png",
+    "static/media/ToDoList.png": "/cs_portfolio/static/media/ToDoList.b3b216d3aa6b260f5efe.png",
+    "static/media/OpenSans-Medium.ttf": "/cs_portfolio/static/media/OpenSans-Medium.65529e6c75fe516f596a.ttf",
+    "static/media/OpenSans-Regular.ttf": "/cs_portfolio/static/media/OpenSans-Regular.57cd57a648021fa1c396.ttf",
+    "static/media/JuniLogo.png": "/cs_portfolio/static/media/JuniLogo.cec5117c540a3eaa917f.png",
+    "static/media/FlashCardsAppLogo.png": "/cs_portfolio/static/media/FlashCardsAppLogo.41af68799121d2974f05.png",
+    "static/media/RoomEasy.png": "/cs_portfolio/static/media/RoomEasy.b7888580fc8670e92637.png",
+    "static/media/PureLogo.png": "/cs_portfolio/static/media/PureLogo.5d894c42ff9347adb569.png",
+    "static/media/MicrosoftLogo.png": "/cs_portfolio/static/media/MicrosoftLogo.92682d13b222b32c4833.png",
+    "index.html": "/cs_portfolio/index.html",
+    "main.3177ff9b.css.map": "/cs_portfolio/static/css/main.3177ff9b.css.map",
+    "main.eedfc7db.js.map": "/cs_portfolio/static/js/main.eedfc7db.js.map",
+    "787.81552d00.chunk.js.map": "/cs_portfolio/static/js/787.81552d00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3177ff9b.css",
+    "static/js/main.eedfc7db.js"
+  ]
+}
